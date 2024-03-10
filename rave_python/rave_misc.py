@@ -47,7 +47,7 @@ def checkTransferParameters(requiredParameters, paymentDetails):
             if paymentDetails["currency"] not in excludedCurrencies:
                 if "meta" in paymentDetails:
                     for i in requiredTransferMetaParams:
-                        if i not in paymentDetails["meta"][0]:
+                        if i not in paymentDetails["meta"]:
                             raise IncompletePaymentDetailsError(
                                 i, requiredTransferMetaParams)
                 else:
