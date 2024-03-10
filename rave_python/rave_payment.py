@@ -130,7 +130,7 @@ class Payment(RaveBase):
                     "validationRequired": True,
                     "txRef": txRef,
                     "flwRef": responseJson["data"],
-                    "chargeResponseMessage": responseJson["data"]["chargeResponseMessage"]}
+                    "chargeResponseMessage": responseJson["data"]}
             else:
                 return {
                     "error": True,
