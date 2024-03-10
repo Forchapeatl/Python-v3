@@ -129,14 +129,14 @@ class Payment(RaveBase):
                     "status": responseJson["status"],
                     "validationRequired": True,
                     "txRef": txRef,
-                    "flwRef": responseJson["data"]["flwRef"],
+                    "flwRef": responseJson["data"],
                     "chargeResponseMessage": responseJson["data"]["chargeResponseMessage"]}
             else:
                 return {
                     "error": True,
                     "validationRequired": False,
                     "txRef": txRef,
-                    "flwRef": responseJson["data"]["flwRef"]}
+                    "flwRef": responseJson["data"]}
 
     def _handleCaptureResponse(self, response, request=None):
         """ This handles transaction charge responses """
