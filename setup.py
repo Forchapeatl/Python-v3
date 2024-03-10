@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="rave_python2",
+    name="rave_python3",
     version="1.4.0",
     author="Flutterwave",
     author_email="developers@flutterwavego.com",
