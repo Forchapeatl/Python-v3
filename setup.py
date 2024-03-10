@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="rave_python",
+    name="rave_python2",
     version="1.4.0",
     author="Flutterwave",
     author_email="developers@flutterwavego.com",
     description="Python library for Flutterwave for Business (F4B) v2 APIs.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Flutterwave/rave-python",
+    url="https://github.com/Forchapeatl/Python-v3",
     license="MIT",
     packages=setuptools.find_packages(),
     python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
